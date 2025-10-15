@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "services/user_services",
+    "services/product_services",
+    "shared_libs/common",
+    "shared_libs/shared_types",
+]

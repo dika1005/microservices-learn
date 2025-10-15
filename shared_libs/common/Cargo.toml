@@ -1,0 +1,9 @@
+[package]
+name = "common"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+env_logger = "0.10"
+# `log` adalah facade untuk sistem logging yang memungkinkan kita menggunakan macro seperti `info!`.
+log = "0.4"
