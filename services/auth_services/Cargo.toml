@@ -1,0 +1,19 @@
+[package]
+name = "auth_services"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8"                            # versi terbaru major 0.8.x :contentReference[oaicite:0]{index=0}
+tower-cookies = "0.10"                  # buat cookie dll, versi 0.10 terbaru stabil :contentReference[oaicite:1]{index=1}
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+sqlx = { version = "0.8", features = ["mysql", "runtime-tokio-rustls"] }  # versi 0.8.x terbaru :contentReference[oaicite:2]{index=2}
+bcrypt = "0.15"
+jsonwebtoken = "9.0"
+dotenvy = "0.15"
+time = "0.3"
+chrono = { version = "0.4", features = ["serde"] }
+
+axum-extra = { version = "0.10", features = ["cookie"] }
